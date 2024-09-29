@@ -33,6 +33,7 @@ create_pr() {
 
     # Checkout new branch from the remote main/master branch
     git checkout $main_branch
+    git pull origin $main_branch
 
     # Create a new branch
     git checkout -b "$branch_name"
